@@ -8,6 +8,12 @@
         <%= form.label :body %><br>
         <%= form.textarea :body %>
     </p>
+
+    <p>
+        <%= form.label :status %><br>
+        <%= form.select :status, Visible::VALID_STATUSES, selected: 'public' %>
+    </p>
+
     <p>
         <%= form.submit %>
     </p>

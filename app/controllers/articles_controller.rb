@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  http_basic_authenticate_with name: "Chris", password: "Password123", except: [:index, :show]
+  
   def index
     # Fetch all Articles from the database
     @articles = Article.all
@@ -43,7 +45,7 @@ class ArticlesController < ApplicationController
   # Had to run bin/rails importmap:install
   # and
   # bin/rails turbo:install
-  # in order to get the delete action to work
+  # in order to make the delete action  work
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
@@ -53,7 +55,7 @@ class ArticlesController < ApplicationController
   
   private 
     def article_params
-      params.expect(article: [:title, :body])
+      params.expect(article: [:title, :body, :status])
     end
   end
 
