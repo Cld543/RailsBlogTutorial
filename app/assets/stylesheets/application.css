@@ -8,3 +8,55 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+ /*
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+ }
+
+ a:visited {
+    color: white;
+ }
+
+ body {
+    background-color: rgb(32, 43, 90);
+
+ }
+
+ .add-comment-section {
+    background-color: rgb(102, 113, 163);
+    width: fit-content;
+    color: black;
+ }
+ header {
+    background-color: rgb(32, 43, 90);
+    height: 3rem;
+    color: white;
+ }
+ .comment-form {
+    width: fit-content;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgb(64, 185, 241);
+ }
+
+ footer {
+    position: absolute;
+    bottom: 0;
+    color: white;
+ }
+
+ .blogpost {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    color: white;
+    background-color: rgb(19, 25, 53);
+ }
+    */
